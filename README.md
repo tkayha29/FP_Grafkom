@@ -2,7 +2,7 @@
 
 Nama | NRP |
 --- | --- | 
-Alfarabi Muzli | 05111940000xxx |
+Alfarabi Muzli | 05111940000039 |
 Tsania Az Zahra | 05111940000032 |
 Ichsanul Aulia | 05111840000xxx |
 
