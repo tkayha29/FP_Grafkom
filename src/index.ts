@@ -22,10 +22,10 @@ export class ThreePhysicsComponent extends Scene3D {
     // set up scene (light, ground, grid, sky, orbitControls)
     // ukuran ground diperluas 1000x1000
     this.warpSpeed('-ground')
-    const ground = this.physics.add.ground({ width: 1000, height: 1000 })
+    let ground = this.physics.add.ground({ width: 1000, height: 1000 })
     
     // position camera
-    this.camera.position.set(0, 200, 25)
+    this.camera.position.set(0, 300, 25)
 
     // enable physics debug
     if (this.physics.debug) {
@@ -63,6 +63,11 @@ export class ThreePhysicsComponent extends Scene3D {
     }
     this.add.existing(crane as any)
 
+    const texture = new THREE.TextureLoader().load( 'assets/img/link.jpg' );
+
+// immediately use the texture for material creation
+    const material = new THREE.MeshBasicMaterial( { map: texture } );
+
   
     let mat1 = this.add.material({ lambert: { color: 'yellow', transparent: false } })
     let mat2 = this.add.material({ lambert: { color: 'blue', transparent: false } })
@@ -96,6 +101,7 @@ export class ThreePhysicsComponent extends Scene3D {
   }
 
 }
+
 
 // set your project configs
 const config = { scenes: [ThreePhysicsComponent], antialias: true, gravity: { x: 0, y: -9.81, z: 0 } }

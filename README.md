@@ -4,7 +4,7 @@ Nama | NRP |
 --- | --- | 
 Alfarabi Muzli | 05111940000039 |
 Tsania Az Zahra | 05111940000032 |
-Ichsanul Aulia | 05111840000xxx |
+Ichsanul Aulia | 05111840007002 |
 
 ### For further information about development contribution please check the Commit History. Thank You.
 
